@@ -27,10 +27,23 @@ public:
 		cin >> namaMK;
 	}
 
-	void tampil() {
+	void tampilMK() {
 		cout << "\nJumlah SKS = " << sks;
 		cout << "\nKode MK = " << kode;
 		cout << "\nNama MK = " << namaMK << endl;
 
 	}
 };
+
+int main() {
+	Mahasiswa mhs;
+	MataKuliah MK;
+
+	cout << "Masukan NIM = ";
+	cin >> mhs.nim;
+	cout << "Masukan nama = ";
+	cin >> mhs.nama;
+	mhs.tampil();
+	MK.inputMK();
+	MK.tampilMK();
+}
